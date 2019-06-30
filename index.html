@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang ="en"> 
+    <head>
+        <link rel= "stylesheet" type= "text/css" href="site.css">    
+        <!--<meta charset="utf-8">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    </head>
+    <body>
+        <ul id="navbar">
+            <li> <a href ="index.html"> Home</a></li>
+            <li> <a href ="about.html"> About</a></li>
+            <li> <a href ="current.html"> Current Class Schedule</a></li>
+            <li> <a href="demo.php"> Demo Page </a></li>
+            <li> <a href="nameEntry.php"> Visitor Login</a></li>
+            <li> <a href="TermPaper.html">Resume</a></li>
+            <li> <a href="gatorsRugby.html">Gators Rugby</a></li>
+        </ul>
+        <div>
+            <button onclick="changeNav()" id="navbutton">Change Navigation Bar Color</button>
+            <button id="animateButton">Animate</button>
+            <script>
+                function changeNav() {
+                    document.getElementById("navbar").style.backgroundColor = "red"
+                }
+            </script>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <h1>Carlos Lopez's Homepage</h1>
+            <img 
+                src ="https://vignette.wikia.nocookie.net/spongebob/images/6/6b/Octavius_rex2.jpg/revision/latest?cb=20130327190027"
+                alt ="meep"
+                class="center" 
+                id="profilepicture">
+            <script>
+                $(document).ready(function () {
+                    $("#animateButton").click(function () {
+                        $(".center").animate({
+                            opacity: '.4'
+                        });
+                    });
+                });
+                $(document).ready(function () {
+                    $("#animateButton").click(function () {
+                        $(".center").fadeOut("slow");
+                    });
+                });
+            </script>
+            <p>This is me in my natural form</p>
+        </div>
+    </body>
+</html>
+

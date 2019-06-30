@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel= "stylesheet" type= "text/css" href="gatorsRugbyLayout.css">   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!--bootstrap-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+        <style>
+            * {
+                box-sizing: border-box;
+
+            }
+            body {
+                background-color: #474e5d;
+                /*font-family: Helvetica, sans-serif;*/
+                margin-top: 5%;
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/San_Francisco_State_Gators_logo.svg/2000px-San_Francisco_State_Gators_logo.svg.png");
+
+                background-attachment: fixed;
+                background-position: center -100px;
+                background-size: 80%;
+                background-repeat: no-repeat;
+                /*will-change: transform !important;*/
+
+            }
+
+            /* The actual timeline (the vertical ruler) */
+            .timeline {
+                position: relative;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            /* The actual timeline (the vertical ruler) */
+            .timeline::after {
+                content: '';
+                position: absolute;
+                width: 6px;
+                background-color: white;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                margin-left: -3px;
+            }
+
+            /* Container around content */
+            .container {
+                padding: 10px 40px;
+                position: relative;
+                background-color: inherit;
+                width: 50%;
+            }
+
+            /* The circles on the timeline */
+            .container::after {
+                content: '';
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                right: -17px;
+                background-color: white;
+                border: 4px solid #ffcc33;
+                top: 15px;
+                border-radius: 50%;
+                z-index: 1;
+            }
+
+            /* Place the container to the left */
+            .left {
+                left: 0;
+            }
+
+            /* Place the container to the right */
+            .right {
+                left: 50%;
+            }
+
+            /* Add arrows to the left container (pointing right) */
+            .left::before {
+                content: " ";
+                height: 0;
+                position: absolute;
+                top: 22px;
+                width: 0;
+                z-index: 1;
+                right: 30px;
+                border: medium solid white;
+                border-width: 10px 0 10px 10px;
+                border-color: transparent transparent transparent #330033;
+            }
+
+            /* Add arrows to the right container (pointing left) */
+            .right::before {
+                content: " ";
+                height: 0;
+                position: absolute;
+                top: 22px;
+                width: 0;
+                z-index: 1;
+                left: 30px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent #330033 transparent transparent;
+            }
+
+            /* Fix the circle for containers on the right side */
+            .right::after {
+                left: -16px;
+            }
+
+            /* The actual content */
+            .content {
+                padding: 20px 30px;
+                background-color: #330033;
+                position: relative;
+                border-radius: 6px;
+
+                /*                border-style: solid;
+                                border-width: medium;
+                                border-color: white;
+                */
+            }
+
+            /* Media queries - Responsive timeline on screens less than 600px wide */
+            @media screen and (max-width: 600px) {
+                /* Place the timelime to the left */
+                .timeline::after {
+                    left: 31px;
+                }
+
+                /* Full-width containers */
+                .container {
+                    width: 100%;
+                    padding-left: 70px;
+                    padding-right: 25px;
+                }
+
+                /* Make sure that all arrows are pointing leftwards */
+                .container::before {
+                    left: 60px;
+                    border: medium solid white;
+                    border-width: 10px 10px 10px 0;
+                    border-color: transparent white transparent transparent;
+                }
+
+                /* Make sure all circles are at the same spot */
+                .left::after, .right::after {
+                    left: 15px;
+                }
+
+                /* Make all right containers behave like the left ones */
+                .right {
+                    left: 0%;
+                }
+
+            }
+            p{
+                font-size: medium;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <ul >
+
+
+            <li> <a href="http://sfsu.edu/" style="padding: 0;"> <img src="sfsupicture.PNG" style="height: 70px; width: available"> </a></li>
+            <li > <a href ="gatorsRugby.html"> Home</a></li>
+            <li > <a href ="roster.html"> Roster</a></li>
+            <li> <a href ="schedule.html"> Schedule</a></li>
+            <li> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfuq6lOkOhjg5sJzWiQMdiVftK9rnlNx6h9CvhYuEBtqFbLkg/viewform?usp=pp_url"> Sponsor</a></li>
+            <li> <a href="https://orgsync.com/14166/chapter"> OrgSync</a></li>
+            <li> <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLezaa7L8rIF99h67AJeOfVwvJr7_NfFkAjk3BRa-mZdMojA/viewform?usp=pp_url">Get Involved</a></li>
+        </ul>
+
+        <script>
+// When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+
+// When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <h2>Monday, June 3, 2019</h2>
+                    <p>Spring '19 Semester Ends.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>Saturday, March 30, 2019</h2>
+                    <p>15's Tournament</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>Saturday, March 16, 2019</h2>
+                    <p> GRFC Vs Chico State</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>Saturday, March 9, 2019</h2>
+                    <p >GRCF At UC Santa Cruz</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>Saturday, March 2, 2019</h2>
+                    <p>GRFC At Sacramento State</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>Saturday, February 16, 2019</h2>
+                    <p>GRFC At Fresno State</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>Saturday, February 9, 2019</h2>
+                    <p >GRFC Vs Stanford</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>Saturday, February 2, 2019</h2>
+                    <p >GRFC Vs University of Nevada-Reno</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2 style="background-color: rgba(255, 204, 51, .7)">Monday, January 28, 2019</h2>
+                    <p>Spring '19 First Day of Instruction</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>Saturday, January 26, 2019</h2>
+                    <p>GRFC At San Jose State University</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>Friday, January 4, 2019</h2>
+                    <p>Fall '18 Semester Ends</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>Saturday, November 10, 2018</h2>
+                    <p>University Of Pacific Tournament</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>Saturday, November 3, 2018</h2>
+                    <p >Pac West 7's Tournament</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2 style="background-color: rgba(255, 204, 51, .7)">Monday, August 27, 2018</h2>
+                    <p >Fall '18 First Day of Instruction</p>
+                </div>
+            </div>
+            <!--            <div class="container left">
+                            <div class="content">
+                                <h2>2011</h2>
+                                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                            </div>
+                        </div>
+                        <div class="container right">
+                            <div class="content">
+                                <h2>2007</h2>
+                                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                            </div>
+                        </div>
+            -->
+        </div>
+
+        <!--        
+                <div style="bottom: 0 !important; width: 100%; height: 280px; background-color: #330033; overflow-y: hidden">
+        
+                    <a href="https://www.usarugby.org/">
+                        <img src="https://cdn-img.usarugby.org/ogp.png" alt="USARugby" style="width: 310px; height: auto; display: inline-block; opacity: .6">
+                    </a> 
+                    <a href="https://www.canterbury.com/">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Canterbury_of_New_Zealand_logo.svg/1200px-Canterbury_of_New_Zealand_logo.svg.png" alt="Canterbury" style="width: 250px; height: auto; display: inline-block; opacity: .6">
+                    </a>
+                    <a href="https://usa.rhinorugby.com/">
+                        <img src="https://rhinoaustralia.com/wp-content/uploads/2015/11/Rhino-Rugby-Logo.png" alt="RhinoRugby" style="width: 250px; height: auto; display: inline-block; opacity: .6; margin-left: 50px">
+                    </a>
+                    <a href="https://pac-12.com/sport/rugby">
+                        <img src="https://x.pac-12.com/profiles/pac12/modules/features/pac12_standings/images/pac12.png" alt="Pac12" style="width: 250px; height: auto; display: inline-block; opacity: .6">
+                    </a>
+                    <a href="http://www.sfsu.edu/">
+                        <img src="https://www.logolynx.com/images/logolynx/84/844dcdf95f3151d731817cafbd4bc064.png" alt="Gators" style="width: 300px; height: auto; display: inline-block; opacity: .6; margin-left: 20px">
+                    </a>
+        
+                </div>-->
+
+    </body>
+</html>

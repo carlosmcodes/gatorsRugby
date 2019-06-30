@@ -1,0 +1,331 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 21, 2018, 2:18:05 PM
+    Author     : esef2
+*/
+.scroll-down-cue {
+    margin-top: -80px;
+    height: 80px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.scroll-down-cue a {
+    width: 70px;
+    height: 30px;
+    position: relative;
+    margin: 0 auto;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+.scroll-down-cue a:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #330033;
+    border-bottom-style: solid;
+    border-bottom-color: #ffcc33;
+    border-bottom-width: medium;
+    z-index: 500;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding: 28px 16px;
+    text-decoration: none;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: 'Fjalla One', sans-serif;
+
+
+}
+
+li a:hover:not(.active) {
+    background-color: #ffcc33;
+}
+.parallaxGator {
+    /* The image used */
+    background-image: url("https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/47379548_2231531750211668_6761040721685250048_o.jpg?_nc_cat=103&_nc_ht=scontent-lax3-1.xx&oh=8e61e33e20ac1e96bc385a5a7e9d1494&oe=5C9DA628");
+    /* Set a specific height */
+    min-height: 400px;
+    /*opacity: .85;*/
+    background-size: 100% !important;
+    background-position: center -100px !important;
+
+}
+.imagecenter{
+
+    margin: auto; 
+    display: block;
+
+}
+.parallaxPlayer1{
+    /* The image used */
+    background-image: url("https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/47319193_2231532243544952_2091806582487646208_o.jpg?_nc_cat=103&_nc_ht=scontent-lax3-1.xx&oh=5c56f36cd86612070f4aaec1caeae2a7&oe=5C9CFFE3");
+    /* Set a specific height */
+    min-height: 600px;
+    /*opacity: .85;*/
+    background-size: 100% !important;
+    background-position: center -100px !important;
+    will-change: transform !important;
+}
+.parallaxPlayer2{
+    /* The image used */
+    background-image: url("https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/47226957_2231529793545197_2756372730533117952_o.jpg?_nc_cat=101&_nc_ht=scontent-lax3-1.xx&oh=8038b0d5b186ad4a577e246367522e73&oe=5C6EC301");
+    /* Set a specific height */
+    min-height: 100px !important;
+    opacity: .5;
+
+    /*color: rgba(22,526,52,0.2);*/
+    /*background-color: rgba(22,526,52,0.2);*/
+    background-size: 100% !important;
+    background-position: center 75px !important;
+    will-change: transform !important;
+
+}
+.parallaxPlayer3{
+    /* The image used */
+    background-image: url("https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/47378607_2231532000211643_8677023871494258688_o.jpg?_nc_cat=101&_nc_ht=scontent-lax3-1.xx&oh=811161c20185a9a6940594198c709dcc&oe=5C69B405");
+    /* Set a specific height */
+    min-height: 100px !important;
+    opacity: .5;
+    background-size: 100% !important;
+    background-position: center -230px !important;
+    will-change: transform !important;
+
+}
+.parallaxPlayer4{
+    /* The image used */
+    background-image: url("https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/47371627_2231531180211725_1059833714873204736_o.jpg?_nc_cat=101&_nc_ht=scontent-lax3-1.xx&oh=4d7c30e0cabbb8313140422186178441&oe=5C6FF707");
+    /* Set a specific height */
+    min-height: 100px !important;
+    opacity: .5;
+    background-size: 100% !important;
+    background-position: center -150px !important;
+    will-change: transform !important;
+}
+.parallaxPlayer5{
+    /* The image used */
+    background-image: url("https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/47312612_2231531550211688_4896797165990445056_o.jpg?_nc_cat=101&_nc_ht=scontent-lax3-1.xx&oh=51a1767ca1a4ec39c9cb149fb48eab5f&oe=5C9C267D");
+    /* Set a specific height */
+    min-height: 100px !important;
+    opacity: .5;
+    background-size: 100% !important;
+    background-position: center -150px !important;
+    will-change: transform !important;
+}
+.parallaxPlayer6{
+    /* The image used */
+    background-image: url("https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/47296372_2231531280211715_5041394472735211520_o.jpg?_nc_cat=111&_nc_ht=scontent-lax3-2.xx&oh=f50a5a3a66198d3c40cd97361eb19f16&oe=5C99AA4E");
+    /* Set a specific height */
+    min-height: 100px !important;
+    opacity: .5;
+    background-size: 100% !important;
+    background-position: center -150px !important;
+    will-change: transform !important;
+}
+.parallaxPlayer7{
+    /* The image used */
+    background-image: url("https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/47209671_2231531010211742_1066863923501727744_o.jpg?_nc_cat=108&_nc_ht=scontent-lax3-1.xx&oh=8199a011dc828755b8fdc5ea17cdd3cd&oe=5C7064E1");
+    /* Set a specific height */
+    min-height: 100px !important;
+    opacity: .5;
+    background-size: 100% !important;
+    background-position: center 50px !important;
+    will-change: transform !important;
+}
+.parallaxPlayer8{
+    /* The image used */
+    background-image: url("https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/47437192_2232635986767911_5312253557305507840_o.jpg?_nc_cat=101&_nc_ht=scontent-lax3-1.xx&oh=220c0e994f5a5a28b553a620c4ae65c7&oe=5C9D11F4");
+    /* Set a specific height */
+    min-height: 100px !important;
+    opacity: .5;
+    background-size: 100% !important;
+    background-position: center -150px !important;
+    will-change: transform !important;
+}
+.parallaxPlayer9{
+    /* The image used */
+    background-image: url("https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/47320838_2232648190100024_8976133932382683136_o.jpg?_nc_cat=100&_nc_ht=scontent-lax3-1.xx&oh=ba90e91e77e422c7b3066cad4f3b4584&oe=5CADB617");
+    /* Set a specific height */
+    min-height: 100px !important;
+    opacity: .5;
+    background-size: 100% !important;
+    background-position: center -150px !important;
+    will-change: transform !important;
+}
+.parallaxPlayer10{
+    /* The image used */
+    background-image: url("https://cdn1.orgsync.com/images/os-photos/md7chs6fb4er61y.jpg");
+    /* Set a specific height */
+    min-height: 100px !important;
+    opacity: .5;
+    background-size: 100% !important;
+    background-position: center -150px !important;
+    will-change: transform !important;
+}
+
+
+.backgrounddefault {
+
+    /*     Create the parallax scrolling effect 
+    */ 
+    background-attachment: fixed;
+    background-position: center 80px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    will-change: transform !important;
+
+
+
+
+}
+.rosterLayout{
+    background-color: #330033;
+    border-style:solid;
+    border-width: thin;
+    border-color:  #ffcc33;
+    margin: 0;
+
+
+}
+h1{
+
+    background-color: inherit;
+    color: white;
+    font: sans-serif;
+    font-size: 20px !important;
+    color: white !important;
+    margin-top: 10px !important;
+    margin-left: 2px;
+
+}
+h2{
+    margin-top: 10px !important;
+    background-color: inherit;
+    color: white !important;
+    font: sans-serif;
+    margin-left: 2px;
+    font-size: 20px !important;
+}
+
+h3{
+    background-color: inherit;
+    color: white;
+    font: sans-serif;
+    font-size: 20px !important;
+    color: white !important;
+    margin-top: 10px !important;
+
+
+}
+h4 {
+    margin-top: 10px !important;
+    background-color: inherit;
+    color: white !important;
+    font: sans-serif;
+    font-size: 20px !important;
+
+}
+p{
+    color: white;
+    font-size: 12px;
+
+}
+.boxImage{
+    display: block;
+    content: url(defaultRosterImage.jpg);
+    width: 06%;
+    height: 06%;
+    margin: 0;
+
+
+
+}
+playerName {
+    font-size: larger;
+    color: white;
+
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #330033;
+    color: white;
+    height: 20%;
+    text-align: center;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #ffcc33;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #ffcc33;
+    opacity: .6;
+}
+
+.fa {
+  padding: 20px !important;
+  font-size: 30px !important;
+  width: 75px !important;
+  text-align: center !important;
+  margin: 5px 2px !important;
+  border-radius: 50% !important;
+}
+
+.fa:hover {
+    opacity: 0.7 !important;
+}
+
+.fa-facebook {
+  background: #3B5998 !important;
+  color: white !important;
+}
+
+.fa-instagram {
+  background: #e4405f !important;
+  color: white !important;
+}

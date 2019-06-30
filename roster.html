@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+
+        <link rel= "stylesheet" type= "text/css" href="gatorsRugbyLayout.css">   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!--bootstrap-->
+        <link  rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!--COACH & STAFF CARD-->
+        <style>
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                margin: 40px 20px;
+                text-align: center;
+                font-family: arial;
+                text-align: center;
+                display: inline-block;
+                background-color: white;
+            }
+
+            .title {
+                color: black;
+                font-size: 18px;
+            }
+
+            button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                font-size: 18px;
+
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 22px;
+                color: black;
+            }
+
+            button:hover, a:hover {
+                opacity: 0.7;
+            }
+            p{
+                font-size: medium;
+            }        </style>
+    </head>
+    <body>
+
+        <script>
+// When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+
+// When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+
+        <ul >
+
+
+            <li> <a href="http://sfsu.edu/" style="padding: 0;"> <img src="sfsupicture.PNG" style="height: 70px; width: available"> </a></li>
+            <li > <a href ="gatorsRugby.html"> Home</a></li>
+            <li > <a href ="roster.html"> Roster</a></li>
+            <li> <a href ="schedule.html"> Schedule</a></li>
+            <li> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfuq6lOkOhjg5sJzWiQMdiVftK9rnlNx6h9CvhYuEBtqFbLkg/viewform?usp=pp_url"> Sponsor</a></li>
+            <li> <a href="https://orgsync.com/14166/chapter"> OrgSync</a></li>
+            <li> <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLezaa7L8rIF99h67AJeOfVwvJr7_NfFkAjk3BRa-mZdMojA/viewform?usp=pp_url">Get Involved</a></li>
+            
+
+        </ul>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <!--initial pic-->
+        <div class="parallaxPlayer1 backgrounddefault" style="height: 800px"> </div>
+
+        <!--second pic-->
+        <div class="parallaxPlayer2 backgrounddefault" >
+            <h5 style="margin: 0; font-family: monospace; color: black ;font-size: 300px !important; text-align: center">FORWARDS</h5>
+        </div>
+
+
+        <!--roster1-->
+        <div class="rosterLayout" style="padding: 10px">
+            <div class="boxImage" style="display:inline-block;vertical-align:top"> </div>
+            <div style="display: inline-block">
+                <div><h1> Position / Height / Weight</h1> </div>
+                <div><h2>Name</h2></div>
+            </div>
+            <div style="display: inline-block; width: 68%">  </div>
+            <div style="display: inline-block">
+                <div><h3>Grade</h3></div>
+                <div><h4>Hometown</h4></div>
+            </div>
+        </div>
+
+
+        <!--roster2-->
+        <div class="rosterLayout" style="padding: 10px">
+            <div class="boxImage" style="display:inline-block;vertical-align:top"> </div>
+            <div style="display: inline-block">
+                <div><h1> Position / Height / Weight</h1> </div>
+                <div><h2>Name</h2></div>
+            </div>
+            <div style="display: inline-block; width: 68%">  </div>
+            <div style="display: inline-block">
+                <div><h3>Grade</h3></div>
+                <div><h4>Hometown</h4></div>
+            </div>
+        </div>
+
+        <!--roster3-->
+        <div class="rosterLayout" style="padding: 10px">
+            <div class="boxImage" style="display:inline-block;vertical-align:top"> </div>
+            <div style="display: inline-block">
+                <div><h1> Position / Height / Weight</h1> </div>
+                <div><h2>Name</h2></div>
+            </div>
+            <div style="display: inline-block; width: 68%">  </div>
+            <div style="display: inline-block">
+                <div><h3>Grade</h3></div>
+                <div><h4>Hometown</h4></div>
+            </div>
+        </div>
+        <!--split here-->
+        <div class="parallaxPlayer3 backgrounddefault" style="height: 320px"></div>
+
+
+
+        <!--roster4-->
+        <div class="rosterLayout" style="padding: 10px">
+            <div class="boxImage" style="display:inline-block;vertical-align:top"> </div>
+            <div style="display: inline-block">
+                <div><h1> Position / Height / Weight</h1> </div>
+                <div><h2>Name</h2></div>
+            </div>
+            <div style="display: inline-block; width: 68%">  </div>
+            <div style="display: inline-block">
+                <div><h3>Grade</h3></div>
+                <div><h4>Hometown</h4></div>
+            </div>
+        </div>
+        <!--roster5-->
+        <div class="rosterLayout" style="padding: 10px">
+            <div class="boxImage" style="display:inline-block;vertical-align:top"> </div>
+            <div style="display: inline-block">
+                <div><h1> Position / Height / Weight</h1> </div>
+                <div><h2>Name</h2></div>
+            </div>
+            <div style="display: inline-block; width: 68%">  </div>
+            <div style="display: inline-block">
+                <div><h3>Grade</h3></div>
+                <div><h4>Hometown</h4></div>
+            </div>
+        </div>
+        <!--roster6-->
+        <div class="rosterLayout" style="padding: 10px">
+            <div class="boxImage" style="display:inline-block;vertical-align:top"> </div>
+            <div style="display: inline-block">
+                <div><h1> Position / Height / Weight</h1> </div>
+                <div><h2>Name</h2></div>
+            </div>
+            <div style="display: inline-block; width: 68%">  </div>
+            <div style="display: inline-block">
+                <div><h3>Grade</h3></div>
+                <div><h4>Hometown</h4></div>
+            </div>
+        </div>
+
+        <!--split here-->
+
+        <div class="parallaxPlayer4 backgrounddefault"  style="height: 320px"></div>
+
+        <!--roster7-->
+        <div class="rosterLayout" style="padding: 10px">
+            <div class="boxImage" style="display:inline-block;vertical-align:top"> </div>
+            <div style="display: inline-block">
+                <div><h1> Position / Height / Weight</h1> </div>
+                <div><h2>Name</h2></div>
+            </div>
+            <div style="display: inline-block; width: 68%">  </div>
+            <div style="display: inline-block">
+                <div><h3>Grade</h3></div>
+                <div><h4>Hometown</h4></div>
+            </div>
+        </div>
+        <!--roster8-->
+        <div class="rosterLayout" style="padding: 10px">
+            <div class="boxImage" style="display:inline-block;vertical-align:top"> </div>
+            <div style="display: inline-block">
+                <div><h1> Position / Height / Weight</h1> </div>
+                <div><h2>Name</h2></div>
+            </div>
+            <div style="display: inline-block; width: 68%">  </div>
+            <div style="display: inline-block">
+                <div><h3>Grade</h3></div>
+                <div><h4>Hometown</h4></div>
+            </div>
+        </div>
+        <!--roster9-->
+        <div class="rosterLayout" style="padding: 10px">
+            <div class="boxImage" style="display:inline-block;vertical-align:top"> </div>
+            <div style="display: inline-block">
+                <div><h1> Position / Height / Weight</h1> </div>
+                <div><h2>Name</h2></div>
+            </div>
+            <div style="display: inline-block; width: 68%">  </div>
+            <div style="display: inline-block">
+                <div><h3>Grade</h3></div>
+                <div><h4>Hometown</h4></div>
+            </div>
+        </div>
+
+        <!--SPLIT-->
+
+        <div class="parallaxPlayer5 backgrounddefault"  style="height: 320px">
+            <h5 style="margin: 0; font-family: monospace; color: black ;font-size: 300px !important; text-align: center">BACKS</h5>
+        </div>
+
+        <!--START BACKS-->
+        <!--roster10-->
+        <div class="rosterLayout" style="padding: 10px">
+            <div class="boxImage" style="display:inline-block;vertical-align:top"> </div>
+            <div style="display: inline-block">
+                <div><h1> Position / Height / Weight</h1> </div>
+                <div><h2>Name</h2></div>
+            </div>
+            <div style="display: inline-block; width: 68%">  </div>
+            <div style="display: inline-block">
+                <div><h3>Grade</h3></div>
+                <div><h4>Hometown</h4></div>
+            </div>
+        </div>
+        <!--roster11-->
+        <div class="rosterLayout" style="padding: 10px">
+            <div class="boxImage" style="display:inline-block;vertical-align:top"> </div>
+            <div style="display: inline-block">
+                <div><h1> Position / Height / Weight</h1> </div>
+                <div><h2>Name</h2></div>
+            </div>
+            <div style="display: inline-block; width: 68%">  </div>
+            <div style="display: inline-block">
+                <div><h3>Grade</h3></div>
+                <div><h4>Hometown</h4></div>
+            </div>
+        </div>
+        <!--roster12-->
+        <div class="rosterLayout" style="padding: 10px">
+            <div class="boxImage" style="display:inline-block;vertical-align:top"> </div>
+            <div style="display: inline-block">
+                <div><h1> Position / Height / Weight</h1> </div>
+                <div><h2>Name</h2></div>
+            </div>
+            <div style="display: inline-block; width: 68%">  </div>
+            <div style="display: inline-block">
+                <div><h3>Grade</h3></div>
+                <div><h4>Hometown</h4></div>
+            </div>
+        </div>
+
+        <!--SPLIT-->
+        <div class="parallaxPlayer6 backgrounddefault"  style="height: 320px"></div>
+
+        <!--roster13-->
+        <div class="rosterLayout" style="padding: 10px">
+            <div class="boxImage" style="display:inline-block;vertical-align:top"> </div>
+            <div style="display: inline-block">
+                <div><h1> Position / Height / Weight</h1> </div>
+                <div><h2>Name</h2></div>
+            </div>
+            <div style="display: inline-block; width: 68%">  </div>
+            <div style="display: inline-block">
+                <div><h3>Grade</h3></div>
+                <div><h4>Hometown</h4></div>
+            </div>
+        </div>
+        <!--roster14-->
+        <div class="rosterLayout" style="padding: 10px">
+            <div class="boxImage" style="display:inline-block;vertical-align:top"> </div>
+            <div style="display: inline-block">
+                <div><h1> Position / Height / Weight</h1> </div>
+                <div><h2>Name</h2></div>
+            </div>
+            <div style="display: inline-block; width: 68%">  </div>
+            <div style="display: inline-block">
+                <div><h3>Grade</h3></div>
+                <div><h4>Hometown</h4></div>
+            </div>
+        </div>
+        <!--roster15-->
+        <div class="rosterLayout" style="padding: 10px">
+            <div class="boxImage" style="display:inline-block;vertical-align:top"> </div>
+            <div style="display: inline-block">
+                <div><h1> Position / Height / Weight</h1> </div>
+                <div><h2>Name</h2></div>
+            </div>
+            <div style="display: inline-block; width: 68%">  </div>
+            <div style="display: inline-block">
+                <div><h3>Grade</h3></div>
+                <div><h4>Hometown</h4></div>
+            </div>
+        </div>
+
+        <!--SPLIT--> 
+
+        <div class="parallaxPlayer7 backgrounddefault"  style="height: 320px"></div>
+        <!--roster16-->
+        <div class="rosterLayout" style="padding: 10px">
+            <div class="boxImage" style="display:inline-block;vertical-align:top"> </div>
+            <div style="display: inline-block">
+                <div><h1> Position / Height / Weight</h1> </div>
+                <div><h2>Name</h2></div>
+            </div>
+            <div style="display: inline-block; width: 68%">  </div>
+            <div style="display: inline-block">
+                <div><h3>Grade</h3></div>
+                <div><h4>Hometown</h4></div>
+            </div>
+        </div>
+        <!--roster17-->
+        <div class="rosterLayout" style="padding: 10px">
+            <div class="boxImage" style="display:inline-block;vertical-align:top"> </div>
+            <div style="display: inline-block">
+                <div><h1> Position / Height / Weight</h1> </div>
+                <div><h2>Name</h2></div>
+            </div>
+            <div style="display: inline-block; width: 68%">  </div>
+            <div style="display: inline-block">
+                <div><h3>Grade</h3></div>
+                <div><h4>Hometown</h4></div>
+            </div>
+        </div>
+
+        <!--COACHES & STAFF-->
+        <div class="parallaxPlayer8 backgrounddefault">
+            <h5 style="margin: 0; font-family: monospace; color: black ;font-size: 212px !important; text-align: center">COACH & STAFF</h5>
+        </div>
+
+        <div style="background-color: #330033; border-style: solid; border-width: thin; border-color: #ffcc33">
+            <!--<div class="parallaxPlayer10 backgrounddefault">-->
+            <div class="card"   style="margin-left: 6%">
+                <img src="rubgy club gator logo.jpg" alt="John" style="width:100%">
+                <h1 style="color: black !important">Wade Hess</h1>
+                <p class="title" style="color: black !important">Head Coach</p>
+                <p style="color: black !important">2016-Present</p>
+                <p style="margin: 0 0 !important"><button style="width: 100% !important" >Contact</button></p>
+            </div>
+            <div class="card">
+                <img src="rubgy club gator logo.jpg" alt="John" style="width:100%">
+                <h1 style="color: black !important">Malik Hess</h1>
+                <p class="title" style="color: black !important">Assistant Coach</p>
+                <p style="color: black !important">2016-Present</p>
+                <p style="margin: 0 0 !important"><button style="width: 100% !important">Contact</button></p>
+            </div>
+            <div class="card" >
+                <img src="rubgy club gator logo.jpg" alt="John" style="width:100%">
+                <h1 style="color: black !important">Josh Overton</h1>
+                <p class="title" style="color: black !important">Assistant Coach</p>
+                <p style="color: black !important">2016-Present</p>
+                <p style="margin: 0 0 !important"><button style="width: 100% !important">Contact</button></p>
+            </div>
+            <div class="card"   style="margin-right: 6%">
+                <img src="rubgy club gator logo.jpg" alt="John" style="width:100%">
+                <h1 style="color: black !important">Phil Armstrong</h1>
+                <p class="title" style="color: black !important">Staff Advisor</p>
+                <p style="color: black !important">2010-Present</p>
+                <p style="margin: 0 0 !important"><button style="width: 100% !important">Contact</button></p>
+            </div>
+        </div>
+        <div class="parallaxPlayer1 backgrounddefault"> </div>
+
+        <div style="bottom: 0 !important; width: 100%; height: 280px; background-color: #330033; overflow-y: hidden">
+
+            <a href="https://www.usarugby.org/">
+                <img src="https://cdn-img.usarugby.org/ogp.png" alt="USARugby" style="width: 310px; height: auto; display: inline-block; opacity: .6">
+            </a> 
+            <a href="https://www.canterbury.com/">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Canterbury_of_New_Zealand_logo.svg/1200px-Canterbury_of_New_Zealand_logo.svg.png" alt="Canterbury" style="width: 250px; height: auto; display: inline-block; opacity: .6">
+            </a>
+            <a href="https://usa.rhinorugby.com/">
+                <img src="https://rhinoaustralia.com/wp-content/uploads/2015/11/Rhino-Rugby-Logo.png" alt="RhinoRugby" style="width: 250px; height: auto; display: inline-block; opacity: .6; margin-left: 50px">
+            </a>
+            <a href="https://pac-12.com/sport/rugby">
+                <img src="https://x.pac-12.com/profiles/pac12/modules/features/pac12_standings/images/pac12.png" alt="Pac12" style="width: 250px; height: auto; display: inline-block; opacity: .6">
+            </a>
+            <a href="http://www.sfsu.edu/">
+                <img src="https://www.logolynx.com/images/logolynx/84/844dcdf95f3151d731817cafbd4bc064.png" alt="Gators" style="width: 300px; height: auto; display: inline-block; opacity: .6; margin-left: 20px">
+            </a>
+
+        </div>
+        <div>
+            <p style="text-align: center; background-color: #330033; margin: 0; padding-bottom: 10px"> &reg Official Website of San Francisco State University Gators Rugby Football Club    |   &copy Developed By 2018-2019 Scrumhalf Carlos 'JR4' Lopez</p>
+        </div>
+    </body>
+</html>
